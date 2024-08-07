@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">
+        <div class="input"></div>
+        <div class="output"></div>
+      </div>
+      <div class="buttons">
+        <div class="left-group">
+          <ul class="modifier-buttons">
+            <button data-function="clear" class="modifier-btn light-btn clear">
+              C
+            </button>
+            <button
+              data-function="inverse"
+              class="modifier-btn light-btn inverse"
+            >
+              +/-
+            </button>
+            <button
+              data-function="percentage"
+              class="modifier-btn light-btn percentage"
+            >
+              %
+            </button>
+          </ul>
+          <div class="numbers-buttons">
+            <ul class="left-col">
+              <button data-value="7" class="number-btn light-btn 7">7</button>
+              <button data-value="4" class="number-btn light-btn 4">4</button>
+              <button data-value="1" class="number-btn light-btn 1">1</button>
+            </ul>
+            <ul class="middle-col">
+              <button data-value="8" class="number-btn light-btn 8">8</button>
+              <button data-value="5" class="number-btn light-btn 5">5</button>
+              <button data-value="2" class="number-btn light-btn 2">2</button>
+            </ul>
+            <ul class="middle-col">
+              <button data-value="9" class="number-btn light-btn 9">9</button>
+              <button data-value="6" class="number-btn light-btn 6">6</button>
+              <button data-value="3" class="number-btn light-btn 3">3</button>
+            </ul>
+          </div>
+          <ul class="misc-buttons">
+            <button data-value="0" class="number-btn light-btn double-width">
+              0
+            </button>
+            <button data-value="." class="number-btn light-btn">.</button>
+          </ul>
+        </div>
+        <div class="right-group">
+          <ul class="operators">
+            <button data-operation="/" class="operator-btn light-btn divide">
+              /
+            </button>
+            <button data-operation="*" class="operator-btn light-btn multiply">
+              *
+            </button>
+            <button data-operation="-" class="operator-btn light-btn subtract">
+              -
+            </button>
+            <button data-operation="+" class="operator-btn light-btn add">
+              +
+            </button>
+            <button
+              data-operation="calculate"
+              class="operator-btn light-btn get-result"
+            >
+              =
+            </button>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
